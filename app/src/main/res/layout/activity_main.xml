@@ -6,13 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="158dp"
-        android:layout_height="36dp"
-        android:text="hola mundo"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <EditText
+        android:id="@+id/editTextTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="104dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/editTextTextLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="@string/lastname"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextName" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextLastName" />
 </androidx.constraintlayout.widget.ConstraintLayout>
